@@ -35,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
 
   _checkWinner([int move = 0]) {
     this._move = move;
-    if (move >= 5) {
+    if (move >= 5 && this._msg == "") {
       //row1
       if (mat[0][0] == mat[0][1] &&
           mat[0][0] == mat[0][2] &&
